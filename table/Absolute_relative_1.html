@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .parent{
+            border:30px solid grey;
+            background-color: blue;
+            /* position: relative; */
+            height: 400vh; 
+        }
+        .child_1{
+            top:0; 
+            height:100vh;
+            width: 100px;
+            /* padding: 50px; */
+            background-color: aqua;
+            color: darkmagenta;
+            /* position:sticky; */
+            position: fixed;
+
+        }
+        .child_2{
+            background-color: deeppink;
+            color:darkseagreen;
+            height: 100vh;
+            width: 100px;
+        }
+        .child_3{
+            background-color: darksalmon;
+            color:black;
+            height: 100vh;
+            width: 100px;
+
+        }
+        .child_4{
+            background-color:hotpink;
+            color: black;
+            height: 100vh;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <h1 class="child_1">Good morning</h1>
+    <h2 class="child_2">Good noon</h2>
+    <h3 class="child_3">Good evening</h3>
+    <h4 class="child_4">Good night</h4>
+   </div> 
+</body>
+</html>

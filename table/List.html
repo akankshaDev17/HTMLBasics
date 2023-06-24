@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .Hello ul{
+            list-style-type:none;
+        }
+        .Hello ul li{
+            background-color:hotpink;
+            color:white;
+            float:left;
+            width:300px;
+            
+            
+        }
+        .Hello ul li ul{
+            display:none;
+        }
+        .Hello ul li:hover{
+            background-color: brown;
+            color: black;
+        }
+        .Hello ul li:hover>ul{
+            display: block;
+        }
+        .Hello ul li ul li ul {
+            top:0;
+            width: 300px;
+            height:100px;
+            left: 300px;
+            position: absolute;
+
+            
+        }
+        .Hello ul li ul li {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="Hello">
+        <ul>
+            <li>Sony
+                <ul >
+                    <li>Mobile</li>
+                    <li>TV</li>
+                    <li>Appliances</li>
+                </ul>
+            </li>
+            <li>Samsung
+                <ul>
+                    <li>Speakers</li>
+                    <li>Laptops</li>
+                    <li>LEDs
+                        <ul>
+                            <li>23 inch</li>
+                            <li>24 inch</li>
+                            <li>34 inch</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Apple
+                <ul>
+                    <li>Macbook</li>
+                    <li>Ear pods</li>
+                    <li>Iphone</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

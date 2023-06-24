@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+   <style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    .Hello ul li{
+        list-style-type:none;
+        float: left;
+        width:300px;
+        background-color:hotpink;
+        color:aliceblue;
+       
+        
+    }
+    .Hello ul li:hover{
+        color: blueviolet;
+        background-color: chocolate;
+
+    }
+
+    .Hello ul li ul {
+        display: none;
+        
+
+    }
+    .Hello ul li:hover > ul{
+        display: block;
+    }
+    .Hello ul li ul li ul{
+        position:absolute;
+        top:0;
+        height:100px;
+        width:300px;
+        left: 300px;
+
+    }
+    .Hello ul li ul li{
+        position: relative;
+    }
+   </style>
+    
+</head>
+<body>
+    <div class="Hello">
+        <ul>
+            <li>Sony
+                <ul class="Hi">
+                    <li>Television</li>
+                    <li>Mobile</li>
+                    <li>Appliances</li>
+                </ul>
+            </li>
+            <li>Samsung
+                <ul class="Hey">
+                    <li>Mobile</li>
+                    <li>Speakers</li>
+                    <li>LEDs
+                        <ul>
+                            <li>23 inch</li>
+                            <li>32 inch</li>
+                            <li>43 inch</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Apple
+                <ul class="Apple">
+                    <li>Macbook</li>
+                    <li>Ipad</li>
+                    <li>Tablets</li>
+                </ul></li>
+
+        </ul>
+       
+           
+
+        
+    </div>
+</body>
+</html>
