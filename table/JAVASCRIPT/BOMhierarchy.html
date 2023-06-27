@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function bodyLoad(){
+         
+            window.document.images[0].src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+            window.document.forms[0].elements[1].value="Hello"
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="300px" height="400px" border="6px">
+    </div>
+    <div>
+        <form action="#">
+            Name<input type="text">
+            <input type="button">
+
+        </form>
+    </div>
+</body>
+</html>

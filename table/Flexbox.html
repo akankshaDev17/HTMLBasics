@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            border:4px solid black;
+            display:inline-block;
+        }
+        #Container{
+            height:300px;
+            width:800px;
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-end;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+        }
+        #Box1{
+            background-color: hotpink;
+            align-self: center;
+
+        }
+        #Box2{
+            background-color: aqua;
+            flex-grow:2;
+        }
+        #Box3{
+            background-color: blueviolet;
+            flex-shrink: 2;
+        }
+        #Box4{
+            background-color: cadetblue;
+        }
+        #Box5{
+            background-color: chocolate;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flex Box</h1>
+    <div id="Container">
+        <div id="Box1"></div>
+        <div id="Box2"></div>
+        <div id="Box3"></div>
+        <div id="Box4"></div>
+        <div id="Box5"></div>
+
+    </div>
+</body>
+</html>

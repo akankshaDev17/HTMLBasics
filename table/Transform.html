@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div{
+            border:2px solid black;
+            height:200px;
+            width:200px;
+            background-color:hotpink;
+            color: aliceblue;
+            transition-property: all;
+            transition-duration:4s;
+            transition-delay:0.1s;
+            transition-timing-function: ease-in-out;
+            /* transform: translate(150px,200px); */
+            /* transform: rotate(180deg); */
+            
+             transform: scale(2,3);
+            
+            
+           
+        }
+        div:hover{
+            background-color: aqua;
+            height: 400px;
+            width: 500px;
+            color:blue;
+            transform: rotate(180deg);
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This text will transform..
+    </div>
+</body>
+</html>

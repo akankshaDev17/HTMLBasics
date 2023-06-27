@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function ClickMe(){
+            let P_id=document.getElementById("Product_id").value;
+            let P_name=document.getElementById("Product_name").value;
+            let P_price=document.getElementById("Product_price").value;
+            let P_mfd=document.getElementById("Product_manufactured").value;
+            let P_stock=document.getElementById("In_stock");
+            let P_notstock=document.getElementById("Not_in_stock");
+            if(P_stock.checked) {
+                Stock = P_stock.value;
+            }
+            if(P_notstock.checked) {
+                Stock = P_notstock.value;
+            }
+            
+            
+            let Shipped_to=document.getElementById("Shipped_To").value;
+            
+            document.getElementById("ID").innerText=P_id;
+            document.getElementById("Name").innerText=P_name;
+            document.getElementById("Price").innerText=P_price;
+            document.getElementById("Manufactured").innerText=P_mfd
+            document.getElementById("Stock_1").innerText=Stock;
+            document.getElementById("Shipped").innerText=Shipped_to;
+
+
+            
+        }
+        
+    </script>
+    
+</head>
+<body>
+    <div>
+        <fieldset >
+            <legend>Register Product</legend>
+            Product Id<input type="text" id="Product_id"><br>
+            Product Name<input type="text" id="Product_name"><br>
+            Product Price<input type="range" min="3" max="8" id="Product_price"><br>
+            Product Manufactured<input type="date" id="Product_manufactured"><br>
+            Is in Stock Yes<input type="radio" name="Pay" value="Yes" id="In_stock">
+            No<input type="radio" name="Pay" value="No" id="Not_in_stock"><br>
+           Shipped To<select id="Shipped_To">
+            <option value="Delhi">Delhi</option>
+            <option value="Karnal">Karnal</option>
+            <option value="Kurukshetra">Kurukshetra</option>
+           </select><br>
+           <input type="button" placeholder="Register" value="Register" id="Register" onclick="ClickMe()">
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Product Details</legend>
+            <table style="width:400px; border:2px">
+            <tr>
+                <td>Product id</td>
+                <td id="ID"></td>
+            </tr>
+            <tr>
+                <td>Product Name</td>
+                <td id="Name"></td>
+            </tr>
+            <tr>
+                <td>Product Price</td>
+                <td id="Price"></td>
+            </tr>
+            <tr>
+                <td>Product Manufactured</td>
+                <td id="Manufactured"></td>
+            </tr>
+            <tr>
+                <td>Product in stock</td>
+                <td id="Stock_1"></td>
+            </tr>
+            <tr>
+                <td>Shipped To</td>
+                <td id="Shipped"></td>
+            </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>

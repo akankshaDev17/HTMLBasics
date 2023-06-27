@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div{
+            height:200px;
+            width:300px;
+            background-color: hotpink;
+            position: absolute;
+            top:100px;
+            left:50px;
+            animation-name: MyAnimation;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: 5;
+            animation-delay: 0.1s;
+        }
+        /* @keyframes MyAnimation{
+            from{background-color: hotpink;}
+            to{background-color: purple;}
+        } */
+        @keyframes MyAnimation{
+            0%{background-color: aqua;}
+            50%{background-color: purple;}
+            100%{background-color: darkblue;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is animation.
+    </div>
+</body>
+</html>
