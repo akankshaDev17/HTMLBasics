@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function ImageSlider(){
+            let product=["LED","IPHONE","BUDS","LAPTOP"];
+            let product_image=[
+                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPPiL7Y5CIQSfBjAdKw_hfZwvxZ50cDL7qQ&usqp=CAU",
+                 "https://images.unsplash.com/photo-1603791239531-1dda55e194a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGUlMjBpcGhvbmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+                 "https://rukminim2.flixcart.com/image/850/1000/kjlrb0w0-0/headphone/n/k/9/air-buds-truly-wireless-noise-original-imafz4u28vvn68kp.jpeg?q=20",
+                 "https://i.dell.com/sites/csimages/App-Merchandizing_Images/all/laptop-category-latitude-14-9440-lf-rf-800x620.png"
+            ];
+             let P_name=document.getElementById("Prodname");
+             let P_img=document.getElementById("Prodimg");
+             let P_range=document.getElementById("productrange");
+             P_name.innerHTML=product[P_range.value];
+             P_img.src=product_image[P_range.value];
+             
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+            <th id="Prodname">LED</th></tr>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPPiL7Y5CIQSfBjAdKw_hfZwvxZ50cDL7qQ&usqp=CAU" id="Prodimg"width="500px" height="500px"/></td>
+                </tr>
+                <tr>
+                    <td><input type="range"  min="0" max="3" value="0" id="productrange" onchange="ImageSlider()"></td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function ImageSlider(){
+            let prod_name=["LED TV","IPHONE12","EARBUDS","LAPTOP"];
+            let prod_img=[
+            "https://img.freepik.com/premium-psd/smart-tv-mockup-isolated-3d-rendering_322208-226.jpg",
+            "https://specials-images.forbesimg.com/imageserve/6321aca5df0a9fa9eee9950b/IMG-2758/960x0.jpg?cropX1=63&cropX2=1519&cropY1=104&cropY2=1074",
+            "https://cdn.shopify.com/s/files/1/1676/7297/products/Png_250x.jpg?v=1669959025",
+            "https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg"
+
+            ];
+            let p_name=document.getElementById("Product_name");
+            let p_img=document.getElementById("Product_image");
+            let p_range=document.getElementById("Product_range");
+            p_name.innerHTML=prod_name[p_range.value];
+            p_img.src=prod_img[p_range.value];
+        }
+    </script>
+</head>
+<body>
+  <div>
+    <table>
+       <tr><th id="Product_name">LED TV</th></tr>
+       <tr>
+        <td><img src="https://img.freepik.com/premium-psd/smart-tv-mockup-isolated-3d-rendering_322208-226.jpg" width="500px" height="500px" id="Product_image"</td>
+       </tr>
+       <tr>
+        <td>
+            <form>
+                <input type="range" min="0" max="3" id="Product_range" onchange="ImageSlider()"/>
+            </form>
+        </td>
+       </tr>
+    </table>
+  </div>  
+</body>
+</html>

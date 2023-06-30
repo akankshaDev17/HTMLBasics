@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function CheckLoginDetails(){
+            let u_name=document.getElementById("Username").value;
+            let p_name=document.getElementById("Password").value;
+            const userdetails={Name:"Akanksha",Password:"123456"};
+            let msg=document.getElementById("HEY");
+            if(u_name==userdetails.Name && p_name==userdetails.Password){
+            //    let x=document.write("Valid login details");
+               msg.innerHTML="Valid login credentials";
+               
+              
+            }
+            else{
+            //    let y=document.write("Invalid login details");
+               msg.innerHTML="Invalid  login details";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Login Credentials</legend>
+           Username<input type="text" id="Username"><br>
+           Password<input type="password"  id="Password">
+        </fieldset>
+        <form>
+            <input type="button" value="Login" onclick="CheckLoginDetails() "id="Login_1">
+        </form>
+        <div id="HEY"></div>
+    </div>
+</body>
+</html>

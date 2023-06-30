@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        let space=document.getElementById("Hard_disk");
+       let s_ram=document.getElementById("Select_Ram");
+        let g_card=document.getElementById("Card");
+       let button=document.getElementById("Install_b");
+
+        function Game(){
+            
+            if(parseInt(space)>5){
+                space.disabled== true;
+                s_ram.disabled==false;
+            }
+
+        }
+        function Ram(){
+           
+            if(s_ram>5){
+                s_ram.disabled==true;
+                g_card.disabled==false;
+            }
+
+        }
+        function Graphics(){
+           
+            if(g_card.value==Yes||g_card.value==No){
+                g_card.disabled==true;
+                button.disabled==false;
+            }
+
+        }
+        function Graphics_card(){
+            
+            document.write="Game installed successfully";
+            
+        }
+    </script>
+   
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Install Game</legend>
+            <dl>
+                <dt>Select hard disk space available In GB</dt>
+                <dd><select onchange="Game()" id="Hard_disk">
+                    <option value="2GB">2 GB</option>
+                    <option value="5GB">5 GB</option>
+                    <option value="10GB">10 GB</option>
+                </select></dd>
+                <dt>Select Ram</dt>
+                <dd><form>
+                    <input type="number" min="1" max="6" id="Select_Ram" disabled onchange="Ram()">
+                </form></dd>
+                <dt>Graphics card available ?</dt>
+                <dd>
+                    <select disabled onchange="Graphics()" id="Card">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </dd>
+            </dl>
+        </fieldset>
+        <input type="button" value="Install" disabled id="Install_b" onclick="Graphics_card">
+    </div>
+</body>
+</html>

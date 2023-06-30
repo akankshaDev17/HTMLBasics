@@ -1,0 +1,90 @@
+a{
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+    border:1px solid transparent; 
+}
+.Box1{
+    display: flex;
+    font-size:20px;
+}
+.Box1 a {
+    margin-left: 40px;
+}
+.button{
+    border:1px solid transparent; 
+    background-color: darkred;
+    margin-right:10px;
+    /* display: inline-block; */
+    border-radius:15px;
+    /* position: absolute; */
+    margin-top:0px;
+    /* margin-left: 1300px; */
+     width:100px;
+    height:45px;
+   text-align: center;
+   color: aliceblue;
+
+
+}
+body{
+    background-image: url('https://wallpaperaccess.com/full/2456876.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgcontent{
+    height: 600px;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+    position: relative;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-container {
+    background-color: green;
+    display: flex;
+}
+.Content7 {
+    background-color: blue;
+}
+.section-header {
+    /* display: flex; */
+    /* background-color: red; */
+
+}
+.head p {
+    position: absolute;
+    top:230px;
+}
+.head h2 {
+}
+.Content7{
+    font-size:15px;
+    } 
+.Content8{
+    
+    font-size:50px;
+   
+} 
+.book{
+    background-color: darkred;
+    border:2px solid transparent;
+    color: aliceblue;
+    border-radius: 15px;
+    display: inline-block;
+    width:100px;
+    height: 45px;
+    cursor: pointer;
+    
+}
+.Border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
