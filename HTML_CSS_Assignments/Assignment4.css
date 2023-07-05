@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.img{
+    background-image: url('https://previews.123rf.com/images/peopleimages12/peopleimages122302/peopleimages12230215020/198405545-office-overtime-and-woman-at-computer-developer-with-data-innovation-at-tech-startup-internet.jpg');
+    background-repeat: no-repeat;
+    height:500px;
+    width:205vh; 
+    background-size: cover;
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.Header1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40vh;
+}
+.Heading2{
+    font-size: 30px;
+    margin-top: 40px;
+}
+.img1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 205vh;
+    background-color: black;
+    color: white;
+}
+.Heading4{
+    font-size: 40px;
+    font-weight: bold;
+}
+.Heading5{
+    font-size: 80px;
+    font-weight: bolder;
+    
+}

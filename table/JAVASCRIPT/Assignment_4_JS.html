@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,43 +9,47 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <script>
-        let space=document.getElementById("Hard_disk");
-       let s_ram=document.getElementById("Select_Ram");
-        let g_card=document.getElementById("Card");
-       let button=document.getElementById("Install_b");
 
-        function Game(){
-            
-            if(parseInt(space)>5){
-                space.disabled== true;
-                s_ram.disabled==false;
+
+        function Game() {
+            let space = document.getElementById("Hard_disk");
+            let s_ram = document.getElementById("Select_Ram");
+
+            if (parseInt(space.value) > 5) {
+                console.log('sram', s_ram.disabled)
+                space.disabled = true;
+                s_ram.disabled = false;
             }
 
         }
-        function Ram(){
-           
-            if(s_ram>5){
-                s_ram.disabled==true;
-                g_card.disabled==false;
+        function Ram() {
+            let s_ram = document.getElementById("Select_Ram");
+            let g_card = document.getElementById("Card");
+            if (s_ram.value > 2) {
+                console.log('myram', s_ram)
+                s_ram.disabled = true;
+                g_card.disabled = false;
             }
 
         }
-        function Graphics(){
-           
-            if(g_card.value==Yes||g_card.value==No){
-                g_card.disabled==true;
-                button.disabled==false;
+        function Graphics() {
+            let g_card = document.getElementById("Card");
+            let button = document.getElementById("Install_b");
+            if (g_card.value == 'Yes') {
+                g_card.disabled = true;
+                button.disabled = false;
             }
 
         }
-        function Graphics_card(){
-            
-            document.write="Game installed successfully";
-            
+        function Graphics_card() {
+
+            document.write("Game installed successfully");
+
         }
     </script>
-   
+
 </head>
+
 <body>
     <div>
         <fieldset>
@@ -52,14 +57,14 @@
             <dl>
                 <dt>Select hard disk space available In GB</dt>
                 <dd><select onchange="Game()" id="Hard_disk">
-                    <option value="2GB">2 GB</option>
-                    <option value="5GB">5 GB</option>
-                    <option value="10GB">10 GB</option>
-                </select></dd>
+                        <option value="2">2 GB</option>
+                        <option value="5">5 GB</option>
+                        <option value="10">10 GB</option>
+                    </select></dd>
                 <dt>Select Ram</dt>
-                <dd><form>
-                    <input type="number" min="1" max="6" id="Select_Ram" disabled onchange="Ram()">
-                </form></dd>
+                <dd>
+                        <input type="number" min="1" max="6" value="1" id="Select_Ram" disabled onchange="Ram()">
+                </dd>
                 <dt>Graphics card available ?</dt>
                 <dd>
                     <select disabled onchange="Graphics()" id="Card">
@@ -69,7 +74,8 @@
                 </dd>
             </dl>
         </fieldset>
-        <input type="button" value="Install" disabled id="Install_b" onclick="Graphics_card">
+        <input type="button" value="Install" disabled id="Install_b" onclick="Graphics_card()">
     </div>
 </body>
+
 </html>

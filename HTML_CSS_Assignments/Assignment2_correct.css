@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size:30px;
+}
+.Header1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    color:white;
+    font-size:20px;
+    font-weight: bolder;
+
+}
+.Header2 a{
+    margin-left: 40px; 
+}
+body{
+    background-image: url("https://wallpapersmug.com/large/a7546e/night-mountains-stars-sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Title{
+    color: orangered;
+    font-size: 50px;
+}
+.Header3{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    
+}
+.Search{
+    background-color: orangered;
+    color: black;
+    font-size:20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 28px;
+    width:100px
+    
+}
+.button{
+    border: 2px solid orangered;
+    background-color: transparent;
+    height: 28px;
+    width: 100%;
+}
+.section{
+    height:600px;
+    display: flex;
+     
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    position: relative;
+}
+.headingsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.Heading1{
+    
+   
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: bolder;
+    
+}
+.Heading2{
+    
+    
+    font-size:3.5rem;
+    color: orangered;
+}
+.Heading3{
+    
+   
+    color: aliceblue;
+    font-size:3rem;
+    font-weight: bolder;
+}
+.section p{
+    
+    
+    color: aliceblue;
+    font-size: 20px;
+}
+.Join{
+    
+   
+    background-color: orangered;
+    border: 2px solid transparent;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+.LoginContainer{
+    background-color:black;
+    color: aliceblue;
+    height: 600px;
+    width: 400px;
+    position:absolute;
+    margin-top:200px;
+    right: 120px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.LoginHere{
+    background-color: white;
+    color:orangered;
+    font-size: 30px;
+    font-weight: bolder;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.Text1{
+    border:none;
+    background-color: transparent;
+    width: 250px;
+    border-bottom:2px solid orangered;
+    color: white;
+    height: 100px;
+}
+.Text2{
+    border:none;
+    background-color: transparent;
+    border-bottom:2px solid  orangered;
+    width: 250px;
+    height: 100px;
+
+}
+ .Text1:focus{
+    outline: none;
+}
+.Text2:focus{
+    outline: none;
+}
+.Login{
+    background-color: orangered;
+    color: black;
+    width: 250px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.bottom{
+    margin-top:26px;
+}
+.SignUp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top:27px;
+    
+    
+    
+} 
+.with{
+    margin-top: 27px;
+    font-size: 10px;
+}
+.icons i{
+    margin-right: 30px;
+   
+}
+
+
+
+    
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function ChangeCode(){
+            let msg=document.getElementById("msg");
+            let a=Math.random()*10;
+            let b=Math.random()*10;
+             let c=Math.random()*10;
+            let d=Math.random()*10;
+            let e=Math.random()*10;
+            msg.innerHTML=Math.round(a)+""+Math.round(b)+""+Math.round(c)+""+Math.round(d)+""+Math.round(e);
+            document.getElementById("Hello").innerHTML=Math.max(17,34,51);
+            document.getElementById("hey").innerHTML=Math.ceil(0.95);
+            document.getElementById("Hello1").innerHTML=Math.floor(5.95);
+
+
+
+        }
+    </script>
+</head>
+<body>
+    Random Number:
+    <div id="msg"></div>
+    <div id="Hello"></div>
+    <div id="hey"></div>
+    <div id="Hello1"></div>
+    <div>
+        <input type="button" value="Refresh" onclick="ChangeCode()">
+    </div>
+</body>
+</html>

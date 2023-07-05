@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function Check(){
+            let Name_1=document.getElementById("Name");
+            let Pin=document.getElementById("Pin_1");
+            let Submit_1=document.getElementById("Submit");
+            let userdetails={Name:"Akanksha", Pin:123,OTP:456};
+            let msg_1=document.getElementById("msg");
+            let OTP_1=document.getElementById("OTP");
+            
+            if(Name_1.value == userdetails.Name) {
+                console.log("Name valid")
+                if(Pin.value == userdetails.Pin) {
+                    console.log("Pin verified")
+                } else if (OTP_1.value == userdetails.OTP) {
+                    console.log("OTP verified")
+                }
+                 else {
+                    console.log("Invalid code")
+                }
+            } else{
+                // msg_1.innerHTML = "Invalid username"
+                console.log("Invalid name")
+            }
+            // if(userdetails.Name!=Name_1.value)
+            // {
+                
+            //  msg_1.innerHTML="Invalid Username";
+            // }
+            // console.log('pin_',Pin.value)
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Payment</legend>
+            <dl>
+                <dt>Name on Card</dt>
+                <dd><input type="text" id="Name"></dd>
+                <dt>Pin</dt>
+                <dd><input type="number" id="Pin_1"></dd>
+                <dt>OTP</dt>
+                <dd><input type="number" id="OTP"></dd>
+            </dl>
+        </fieldset>
+        <input type="button" value="submit" onclick="Check()" id="Submit">
+    </div>
+    <div class="msg"></div>
+</body>
+</html>
