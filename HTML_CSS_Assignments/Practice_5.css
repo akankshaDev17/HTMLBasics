@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:gray;
+}
+.Header{
+    background-color:white;
+    height: 700px;
+    width: 700px;
+    margin-left: 430px;
+    margin-top: 25px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.Header1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.Div5{
+    margin-left: 40px;
+}
+.Div10{
+    margin-left: 40px;
+}
+.Heading{
+    margin-left: 40px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.Name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.Box{
+    width: 270px;
+    height: 40px;
+}
+.Box1{
+    width:620px;
+    height: 50px;
+}
+.Box2{
+    border:1px solid gray;
+    width:270px ;
+    height: 40px;
+    
+}
+.Box3{
+    background-color: orangered;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 462px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}

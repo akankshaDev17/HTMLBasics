@@ -1,0 +1,41 @@
+// const ul=document.querySelector(".items");
+// ul.remove();
+// const header=document.querySelector(".header");
+// header.style.borderBottom='2px solid black'
+// const Input=document.querySelector(".inputText");
+// Input.value="Hello Aashu";
+// const submit=document.querySelector('input[type="submit"]');
+// submit.value="Akanksha";
+// const list=document.querySelector('.item:last-child');
+// list.style.color='blue';
+// const list2=document.querySelector(".items:nth-child(2)");
+// list2.style.color="blue";
+// const allList=document.querySelectorAll(".items");
+// allList[0].style.backgroundColor="green";
+// const odd=document.querySelectorAll(".items:nth-child(odd)");
+// for(let i=0;i<odd.length;i++){
+//     odd[i].style.color="blue";
+// }
+// const itemList=document.querySelector(".items");
+// itemList.parentNode.style.backgroundColor="red";
+// const itemList=document.querySelector(".items");
+// // itemList.parentNode.parentNode.style.backgroundColor="pink";
+// // console.log(itemList.childNodes);
+// itemList.childNodes[0].style.color="brown";
+// const ItemList=document.querySelector(".items");
+// // ItemList.children[1].style.color="red";
+// // ItemList.childNodes[1].style.color="blue";
+// ItemList.firstElementChild.textContent="Hello";
+// ItemList.lastElementChild.textContent="Hi";
+// const Input=document.querySelector(".inputText");
+// const submit=document.querySelector('input[type="submit"]');
+const newDiv=document.createElement('div');
+newDiv.className="Aashu";
+newDiv.id="Akanksha";
+newDiv.setAttribute('Title','This is title of newDiv');
+console.log(newDiv);
+let newDivText=document.createTextNode("Hello World");
+newDiv.appendChild(newDivText);
+let header=document.querySelector("header .header");
+let h1=document.querySelector(".header h1");
+header.insertBefore(newDiv,h1);

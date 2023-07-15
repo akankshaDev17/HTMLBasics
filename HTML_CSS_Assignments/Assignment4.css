@@ -7,7 +7,7 @@
     background-image: url('https://previews.123rf.com/images/peopleimages12/peopleimages122302/peopleimages12230215020/198405545-office-overtime-and-woman-at-computer-developer-with-data-innovation-at-tech-startup-internet.jpg');
     background-repeat: no-repeat;
     height:500px;
-    width:205vh; 
+    width:100%;
     background-size: cover;
     text-align: center;
     color:white;
@@ -19,10 +19,13 @@
     display: flex;
     flex-direction: row;
     margin-left: 40vh;
+    
+    
 }
 .Heading2{
     font-size: 30px;
     margin-top: 40px;
+    margin-left:50px;
 }
 .img1{
     display: flex;
@@ -30,7 +33,7 @@
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 205vh;
+    width:100%;
     background-color: black;
     color: white;
 }
@@ -41,5 +44,47 @@
 .Heading5{
     font-size: 80px;
     font-weight: bolder;
+    margin-bottom:20px;
     
 }
+.Section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 160vh;
+    margin-left: 20vh;
+    margin-top: 100px;
+}
+.box{
+    width:50vh;
+    height:350px;
+    border:none;
+    border-radius: 10px;
+    background-color: aqua;
+    
+    
+}
+.Foot1{
+    height:350px;
+    width:102.5vh;
+    background-color:darkolivegreen;
+    color: black;
+}
+.Foot2{
+    height:350px;
+    width:102.5vh;
+    background-color:orange;
+    color: black;
+}
+.Footer1{
+    display: flex;
+    margin-top: 90px;
+}
+.Foot3{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+     

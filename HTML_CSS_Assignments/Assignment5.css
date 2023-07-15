@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+    width: 100%;
+    
+}
+.Header1{
+    background-color: white;
+    height: 700px;
+    width:700px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-left: 420px;
+    margin-top:25px; 
+    
+}
+.Header2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    justify-content: space-between;
+    
+}
+.Header5{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+.Header3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+.Header6{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+.Div1{
+    font-size: 30px;
+    
+}
+.Div2{
+    font-size: 30px; 
+    margin-right: 30px;
+}
+.Heading1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+.Apply{
+    margin-left:370px;
+    background-color: orangered;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.Header4{
+    margin-left: 30px;
+}
+.F_name{
+    width: 300px;
+    height:30px;
+}
+.L_name{
+    width: 300px;
+    height:30px;
+}
+.Div3{
+    font-size: 30px;
+
+}
+.Email{
+    width: 300px;
+    height:30px;
+}
+.Div4{
+    font-size: 30px; 
+    margin-right: 30px;
+}
+.Job_Role{
+    width: 300px;
+    height:30px;
+}
+.Header4{
+    font-size: 30px;
+}
+.Address{
+    width: 640px;
+    height: 100px;
+}
+.Div5{
+    font-size: 30px;
+}
+.City{
+    width: 300px;
+    height:30px;
+}
+.Div6{
+    font-size: 30px;
+    margin-right: 30px;
+}
+.Pincode{
+    width: 300px;
+    height:30px;
+}
+.Div7{
+    font-size: 30px;
+}
+.Date{
+    width: 300px;
+    height:30px;
+}
+.Div8{
+    font-size: 30px;
+    margin-right: 30px;
+}
+.CV{
+    width: 300px;
+    height:30px;
+    border: 2px solid darkgrey;
+    text-align: center;
+    padding:1px;
+}

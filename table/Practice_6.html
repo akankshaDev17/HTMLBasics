@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .Container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "sidebar main main main"
+            "sidebar content1 content2 content3"
+            "sidebar footer footer footer";
+        }
+        :root{
+            --main-margin:0;
+            --main-padding:0;
+        }
+        nav{
+            background-color: peachpuff;
+            grid-area: nav;
+            padding: var(--main-margin);
+        }
+        main{
+            background-color: green;
+            grid-area: main;
+        }
+        .sidebar{
+            background-color: orange;
+            grid-area: sidebar;
+        }
+        .content1{
+            background-color: brown;
+            grid-area: content1;
+        }
+        .content2{
+            background-color: skyblue;
+            grid-area: content2;
+        }
+        .content3{
+            background-color: palevioletred;
+            grid-area: content3;
+        }
+        footer{
+            background-color: green;
+            grid-area: footer;
+        }
+    </style>
+  
+
+    
+</head>
+<body>
+    <div class="Container">
+        <nav>navbar</nav>
+        <main>main</main>
+        <div class="sidebar">Sidebar</div>
+        <div class="content1">Content1</div>
+        <div class="content2">Content2</div>
+        <div class="content3">Content3</div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
